@@ -1,0 +1,446 @@
+@font-face {
+  font-family: "Helvetica Neue LT Std";
+  src: url("fonts/HelveticaNeueLTStd-Th.eot") format("embedded-opentype"),
+    url("fonts/HelveticaNeueLTStd-Th.woff2") format("woff2"),
+    url("fonts/HelveticaNeueLTStd-Th.woff") format("woff"),
+    url("fonts/HelveticaNeueLTStd-Th.ttf") format("truetype"),
+    url("fonts/HelveticaNeueLTStd-Th.svg") format("svg");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 17px;
+  color: #737373;
+  font-style: normal;
+  line-height: 1.882352941176471;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #60ab3d;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #616161;
+  margin: 0 0 15px;
+  line-height: 32px;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+h1 {
+  color: #4d4d4d;
+  line-height: 1.25;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+ul,
+ol {
+  margin: 0 0 15px;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0;
+}
+
+code {
+  vertical-align: bottom;
+}
+
+.page-center {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 1200px) {
+  .page-center {
+    max-width: 960px;
+  }
+}
+
+/* ==================================================================================== */
+
+.custom-banner-area {
+  width: 100%;
+  position: relative;
+  min-height: 439px;
+  /*background-color: #ededed;*/
+  background-image: url(images/bg_image_hero.png);
+}
+
+.custom-banner-area .banner-content {
+  display: block;
+  padding-top: 75px;
+}
+
+.custom-banner-area .banner-content h1 {
+  text-align: center;
+  font: normal normal 800 40px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #4d4d4d;
+  line-height: 57px;
+  margin: 0 0 30px;
+}
+
+.custom-banner-area .custom-search {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  max-width: 725px;
+}
+
+.custom-banner-area .search-input-area {
+  display: inline-block;
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  font: normal normal normal 16px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #cccccc;
+  padding: 14px 10px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px rgb(90 58 58 / 8%);
+  background-image: url(images/sss.png);
+  padding-left: 50px;
+  background-position: 13px 20px;
+  background-size: 20px;
+}
+
+.custom-banner-area .search-input-area::placeholder {
+  color: #ccc;
+}
+
+.custom-banner-area .search-input-area:focus {
+  outline: none;
+}
+
+.custom-guidance-box {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-top: -8%;
+}
+
+.custom-guidance-box .guidence-item-box-wrap,
+.custom-tutorials-section .tutorials-video-box,
+.custom-learnmore-section .learn-more-items-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.custom-guidance-box .guidence-item {
+  width: 31%;
+  display: block;
+  margin-right: 32px;
+  margin-bottom: 40px;
+}
+
+.custom-guidance-box .guidence-item .box-inner {
+  padding: 48px 20px 32px 20px;
+  height: 100%;
+  text-align: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #00000014;
+  border-radius: 4px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.custom-guidance-box .guidence-item .image-section {
+  margin-bottom: 16px;
+}
+
+.custom-guidance-box .guidence-item .content-area h3 {
+  font: normal normal normal 24px/32px Source Sans Pro;
+  color: #737373;
+  margin-bottom: 16px;
+}
+
+.page-center.full-width {
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.custom-tutorials-section {
+  width: 100%;
+  display: block;
+  padding: 44px 0 40px;
+}
+
+.custom-tutorials-section .tutorials-title-section {
+  margin-bottom: 32px;
+}
+
+.custom-tutorials-section .tutorials-title-section h3 {
+  font: normal normal normal 24px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #616161;
+  margin-bottom: 5px;
+}
+
+.custom-tutorials-section .tutorials-title-section p {
+  font: normal normal normal 17px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #737373;
+  line-height: 24px;
+  margin: 0;
+}
+
+.custom-tutorials-section .video-box {
+  width: 48%;
+  margin-right: 32px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+.custom-tutorials-section .video-box:last-child {
+  margin-right: 0;
+}
+
+.custom-tutorials-section .video-box .video-box-inner {
+  width: 100%;
+  min-height: 341px;
+  background: #000;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.custom-tutorials-section .video-box .custom-content h2 {
+  text-align: center;
+  font: normal normal 300 27px/33px Helvetica Neue LT Std;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin: 0;
+  font-family: roboto, sans-serif;
+}
+
+.custom-tutorials-section .video-box .custom-content {
+  width: 100%;
+}
+
+.custom-learnmore-section {
+  display: block;
+  width: 100%;
+  padding: 80px 0;
+  background: #ededed;
+}
+
+.custom-learnmore-section .learnmore-title-section h3 {
+  font: normal normal normal 24px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #616161;
+  margin-bottom: 6px;
+}
+
+.custom-learnmore-section .learnmore-title-section p {
+  font: normal normal normal 17px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #737373;
+  margin: 0;
+}
+
+.custom-learnmore-section .learnmore-title-section {
+  margin-bottom: 32px;
+}
+
+.custom-learnmore-section .learn-more-item {
+  width: 31%;
+  display: block;
+  margin-right: 32px;
+  margin-bottom: 40px;
+}
+
+.custom-learnmore-section .learn-more-item-inner {
+  padding: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 10px #00000014;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.custom-learnmore-section .learn-more-item-inner .icon-box {
+  flex: 0 0 auto;
+  margin-right: 36px;
+}
+
+.custom-learnmore-section .learn-more-item-inner .content-box {
+  flex: 1 1 auto;
+}
+
+.custom-learnmore-section .learn-more-item-inner .content-box h6 {
+  font: normal normal 600 17px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #616161;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+.custom-learnmore-section .learn-more-item-inner .content-box ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+.custom-learnmore-section .learn-more-item-inner .content-box ul > li {
+  margin-bottom: 12px;
+}
+
+.custom-learnmore-section .learn-more-item-inner .content-box ul > li > a {
+  font: normal normal normal 17px/32px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #60ab3d;
+  display: block;
+  line-height: 24px;
+}
+
+.custom-learnmore-section
+  .learn-more-item-inner
+  .content-box
+  ul
+  > li.much-more
+  > a {
+  color: #438027;
+}
+
+/* ================================== Media queries ==================================== */
+@media (min-width: 1200px) {
+  .custom-guidance-box .guidence-item:nth-child(3n),
+  .custom-tutorials-section .video-box:nth-child(2n),
+  .custom-learnmore-section .learn-more-item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+/* ============= */
+@media (max-width: 1199px) {
+  .custom-guidance-box .guidence-item:nth-child(2n),
+  .custom-tutorials-section .video-box:nth-child(2n),
+  .custom-learnmore-section .learn-more-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .custom-guidance-box .guidence-item,
+  .custom-learnmore-section .learn-more-item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 960px) and (min-width: 768px) {
+  .custom-guidance-box .guidence-item,
+  .custom-tutorials-section .video-box,
+  .custom-learnmore-section .learn-more-item {
+    width: 47%;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-center.full-width {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .custom-guidance-box .guidence-item,
+  .custom-tutorials-section .video-box {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .custom-learnmore-section .learn-more-item-inner .icon-box {
+    flex: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .custom-learnmore-section .learn-more-item-inner .content-box {
+    flex: none;
+    width: 100%;
+  }
+
+  .custom-learnmore-section .learn-more-item {
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-center.full-width {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .custom-learnmore-section .learn-more-item {
+    width: 100%;
+    margin-right: 0;
+  }
+}
